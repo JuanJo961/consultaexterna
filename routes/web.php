@@ -15,6 +15,12 @@ Route::get('/', function () {
 	return view('pages.welcome');
 })->name('welcome');
 
+Route::get('/consulta_externa', function () {
+	return view('consulta_externa/consulta_externa');
+})->name('welcome');
+
+
+
 Auth::routes();
 
 Route::get('dashboard', 'HomeController@index')->name('home');
