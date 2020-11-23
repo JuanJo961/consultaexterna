@@ -31,6 +31,10 @@ class Usuario extends Model
     {
         return $this->hasMany('App\Modelos\Catalogos\CatHabilitado');
     }
+    public function paciente()
+    {
+        return $this->hasMany('App/Modelos/Paciente');
+    }
     //Relacion de muchos a muchos
     public function roles()
     {
