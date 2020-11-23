@@ -19,6 +19,8 @@ Route::get('/consulta_externa', function () {
 	return view('consulta_externa/consulta_externa');
 })->name('welcome');
 
+Route::get('Calendar/event','ControllerCalendar@index');
+Route::get('Calendar/event/{mes}','ControllerCalendar@index_month');
 
 
 Auth::routes();
