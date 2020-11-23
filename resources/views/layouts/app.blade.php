@@ -31,6 +31,10 @@
             @endif
         @endauth
 
+        <div class="container">
+        @yield('modal_formulario_evento_calendario')
+        </div>
+
         <div class="main-content">
             @include('layouts.navbars.navbar')
             @yield('content')

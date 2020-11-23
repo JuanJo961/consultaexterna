@@ -1,3 +1,3 @@
-<?php
-?>
-<h1>hola</h1>
+@extends('layouts.app')
+
+<h1>Hola Mundo</h1>
