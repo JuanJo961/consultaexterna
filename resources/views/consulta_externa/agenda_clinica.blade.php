@@ -1,3 +1,6 @@
-@extends('layouts.app')
+@extends('layouts.aplication')
+ @section('calendario')
 
-<h1>Hola Mundo</h1>
+
+
+ @endsection

@@ -15,34 +15,22 @@
         <!-- Icons -->
         <link href="{{ asset('argon') }}/vendor/nucleo/css/nucleo.css" rel="stylesheet">
         <link href="{{ asset('argon') }}/vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+        <!-- css fullcalendar -->
+        <link rel="stylesheet" href="assets/vendor/fullcalendar/dist/fullcalendar.min.css">
+        <link rel="stylesheet" href="assets/vendor/sweetalert2/dist/sweetalert2.min.css">
 
         @stack('css')
 
         <!-- Argon CSS -->
         <link type="text/css" href="{{ asset('argon') }}/css/argon.css?v=1.0.0" rel="stylesheet">
     </head>
-    <body class="{{ $class ?? '' }}">
-        @auth()
-            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                @csrf
-            </form>
-            @if (!in_array(request()->route()->getName(), ['welcome', 'page.pricing', 'page.lock']))
-                @include('layouts.navbars.sidebar')
-            @endif
-        @endauth
+    <body>
 
-        <div class="main-content">
-            @include('layouts.navbars.navbar')
-            @yield('content')
-        </div>
         <div class="card card-calendar">
         @include('layouts.calendar.calendario')
         @yield('calendario')
         </div>
 
-        <!-- @if(!auth()->check() || in_array(request()->route()->getName(), ['welcome', 'page.pricing', 'page.lock']))
-            @include('layouts.footers.guest')
-        @endif -->
 
         <script src="{{ asset('argon') }}/vendor/jquery/dist/jquery.min.js"></script>
         <script src="{{ asset('argon') }}/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -54,6 +42,11 @@
         <script src="{{ asset('argon') }}/vendor/chart.js/dist/Chart.min.js"></script>
         <script src="{{ asset('argon') }}/vendor/chart.js/dist/Chart.extension.js"></script>
 
+        <!-- js fullcalendar -->
+        <script src="assets/vendor/moment/min/moment.min.js"></script>
+        <script script src="assets/vendor/fullcalendar/dist/fullcalendar.min.js"></script>
+        <script src="assets/vendor/sweetalert2/dist/sweetalert2.min.js"></script>
+        
         @stack('js')
 
         <!-- Argon JS -->
