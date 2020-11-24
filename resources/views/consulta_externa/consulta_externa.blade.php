@@ -2,88 +2,88 @@
 
 
 <form>
-  <div class="container">
-  <div class="row">
-  <div class="col-sm">
-  <div class="form-group">
-        <label for="curp" class="form-control-label">Curp</label>
-        <input class="form-control" type="text"  id="curp">
-  </div>
-  </div>
-  </div>
-  </div>
-  <div class="container">
-  <div class="row">
-  <div class="col-sm">
-  <div class="form-group">
-        <label for="nombre" class="form-control-label">Nombre</label>
-        <input class="form-control" type="text"  id="nombre">
-  </div>
-  </div>
-  <div class="col-sm">
-  <div class="form-group">
-        <label for="apellido_paterno" class="form-control-label">Apellido Paterno</label>
-        <input class="form-control" type="text"  id="apellido_paterno">
-  </div>
-  </div>
-  <div class="col-sm">
-  <div class="form-group">
-        <label for="apellido_materno" class="form-control-label">Apellido Materno</label>
-        <input class="form-control" type="text"  id="apellido_materno">
-  </div>
-  </div>
-  </div>
-  </div>
-  <div class="container">
-  <div class="row">
-  <div class="col-sm">
-  <div class="form-group">
-        <label for="fecha_nacimiento" class="form-control-label">Fecha de nacimiento</label>
-        <input class="form-control" type="date"  id="fecha_nacimiento">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="curp" class="form-control-label">Curp</label>
+                    <input class="form-control" type="text"  id="curp">
+                </div>
+            </div>
+        </div>
     </div>
+  <div class="container">
+    <div class="row">
+        <div class="col-sm">
+             <div class="form-group">
+                 <label for="nombre" class="form-control-label">Nombre</label>
+                 <input class="form-control" type="text"  id="nombre">
+            </div>
+        </div>
+  <div class="col-sm">
+    <div class="form-group">
+             <label for="apellido_paterno" class="form-control-label">Apellido Paterno</label>
+             <input class="form-control" type="text"  id="apellido_paterno">
+         </div>
+     </div>
+  <div class="col-sm">
+    <div class="form-group">
+                 <label for="apellido_materno" class="form-control-label">Apellido Materno</label>
+                 <input class="form-control" type="text"  id="apellido_materno">
+            </div>
+         </div>
     </div>
-    </div>
+  </div>
+  <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="fecha_nacimiento" class="form-control-label">Fecha de nacimiento</label>
+                    <input class="form-control" type="date"  id="fecha_nacimiento">
+                </div>
+            </div>
+        </div>
     </div>
     <div class="container">
-    <div class="row">
+        <div class="row">
+            <div class="col-sm">
+            |   <div class="form-group">
+                    <label for="example-date-input" class="form-control-label">Nacio Extranjero</label><br/>
+                    <label class="custom-toggle">
+                    <input type="checkbox" checked>
+                    <span class="custom-toggle-slider rounded-circle" data-label-off="NO" data-label-on="SI"></span>
+                 </label>
+              </div>
+        </div>
     <div class="col-sm">
-    <div class="form-group">
-    <label for="example-date-input" class="form-control-label">Nacio Extranjero</label><br/>
-    <label class="custom-toggle">
-    <input type="checkbox" checked>
-    <span class="custom-toggle-slider rounded-circle" data-label-off="NO" data-label-on="SI"></span>
-    </label>
-    </div>
+        <div class="form-group">
+                <label for="pais_origen" class="form-control-label">Pais Origen</label>
+                <input class="form-control" type="text"  id="pais_origen">
+        </div>
     </div>
     <div class="col-sm">
-    <div class="form-group">
-        <label for="pais_origen" class="form-control-label">Pais Origen</label>
-        <input class="form-control" type="text"  id="pais_origen">
-    </div>
-    </div>
-    <div class="col-sm">
-    <div class="form-group">
-        <label for="entidad_nacimiento" class="form-control-label">Entidad Nacimiento</label>
-        <input class="form-control" type="text"  id="entidad_nacimiento">
-    </div>
-    </div>
-    </div>
+        <div class="form-group">
+                    <label for="entidad_nacimiento" class="form-control-label">Entidad Nacimiento</label>
+                    <input class="form-control" type="text"  id="entidad_nacimiento">
+                </div>
+            </div>
+        </div>
     </div>
     <div class="container">
-    <div class="row">
+        <div class="row">
+            <div class="col-sm">
+                <div class="form-group">
+                        <label for="edad" class="form-control-label">Edad</label>
+                        <input class="form-control" type="number"  id="edad">
+                      </div>
+                </div>
     <div class="col-sm">
-    <div class="form-group">
-        <label for="edad" class="form-control-label">Edad</label>
-        <input class="form-control" type="number"  id="edad">
-    </div>
-    </div>
-    <div class="col-sm">
-    <div class="form-group">
-        <label for="gratuidad" class="form-control-label">Gratuidad</label>
-        <input class="form-control" type="text"  id="gratuidad">
-    </div>
-    </div>
-    </div>
+        <div class="form-group">
+                    <label for="gratuidad" class="form-control-label">Gratuidad</label>
+                    <input class="form-control" type="text"  id="gratuidad">
+                </div>
+             </div>
+        </div>
     </div>
     <div class="container">
     <div class="row">
