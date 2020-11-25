@@ -17,8 +17,13 @@ Route::get('/', function () {
 
 Route::get('/consulta_externa', function () {
 	return view('consulta_externa/consulta_externa');
-})->name('welcome');
+});
+Route::get('/agenda_clinica', function () {
+	return view('consulta_externa/agenda_clinica');
+});
 
+Route::get('Calendar/event','ControllerCalendar@calendar');
+Route::get('Calendar/event/{mes}','ControllerCalendar@calendar_month');
 
 
 Auth::routes();

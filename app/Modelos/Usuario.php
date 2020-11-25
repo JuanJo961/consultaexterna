@@ -48,4 +48,5 @@ class Usuario extends Model
     {
         return $this->belongsToMany('App\Modelos\Catalogos\CatDocumento');
     }
+
 }
