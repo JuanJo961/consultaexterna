@@ -22,6 +22,10 @@ Route::get('/agenda_clinica', function () {
 	return view('consulta_externa/agenda_clinica');
 });
 
+Route::get('/registro', function () {
+	return view('consulta_externa/registo');
+});
+
 Route::get('Calendar/event','ControllerCalendar@calendar');
 Route::get('Calendar/event/{mes}','ControllerCalendar@calendar_month');
 
